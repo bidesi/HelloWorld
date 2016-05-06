@@ -1,0 +1,163 @@
+Git 
+---------
+1. git --version
+2. git config --global user.name "Bidesi Gauda"
+3. git config --global user.email "bidesi.mail2gmail.com"
+4. git config --list
+5. clear (clear screen)
+6. git config user.email
+7. git help
+8. git help commit-- for specific command help topic
+
+Creating Repository
+----------------------
+1. create folder to work with
+2. pwd -- current directory
+3. cd ~ (to home directory)
+4. cd .. (one directory back)
+5. ls (all folders in c directory)
+6. cd directory (to next directory)
+7. git (intialize git repository in the PWD)
+
+Commit
+--------------
+1. go to the project folder
+2. ls -la(hidden files inside project manages all- dont change)
+3. add some file inside the folder
+4. git add . (add all the changes created/modified files)
+5. git commit -m "my first commit" (commit the added files and make a snapshot of the commit witht the message)
+
+Adding files and commit the Log
+-------------------------------
+1. git log (history of commits)
+2. git log --author="Person" (shows the commits of the person if not exists shows blank)
+3. git status (shows the status of unchecked files in your directory)
+4. git add "file.ext" to add specific file
+
+Work Flow
+----------------
+1. created file- working copy
+2. add -- means staging area
+   shown by git status
+3. commit - from staging area to repository area
+
+  shown with git log
+  
+Edit files in git
+---------------------
+1. git status -- shows modified files as well
+2. modify the file and make git add it and then git commit
+
+viewing changes
+---------------------
+1. git status shows modified files
+2. git diff shows the diff of two files
+3. git add and then git commit
+
+staging area and repository
+----------------------------
+1. git diff  (compares the working copy with staging area not after add)
+2. get diff --stage   (compares stage area with repository)
+
+delete file
+-------------
+1. git rm file.txt (deletes the file both from repository and working copy)
+2. git status (shows the changes if deleted but not committed)
+3. git commit -m "message of deleted file"
+
+Move and rename files
+-------------------------
+1. rename the file in windows
+2. git status(shows delete and added)
+3. git add "newfile.txt"
+4. git rm file.txt
+5. git status (now shows renamed the file)
+6. git commit -m "change of filename"
+
+7. git mv second.txt pudding.txt(rename the file actually)
+8. to mv to new directory create the directory
+9. git mv pudding.txt directory/patty.txt (move the file to the new directory and renames the files)
+10. git status (shows renamed with directory)
+11. git commit -m "moved the file"
+
+
+working project/website
+-------------------------
+1. create project folder
+2. goto the project folder
+3. intialize repository with git init
+4. git status
+5. git add .
+6. git commit -m "very first commit of project"
+
+commit directly to the repository
+-----------------------------------
+1. change the file contents in ur project
+2. git status
+3. git commit -am "message of changes"
+(without adding direct commit to repository and check with git status)
+(use when edit and simple change)
+
+git it
+-----------
+1. change the file index.html
+2. git status
+3. to get orginal file 
+4. git checkout -- index.html
+5. git status
+
+unstage files
+---------------
+1. change some file and mark it as git add
+2. to revoke the file from stage area to working area if mistakely done some cganges
+3. git reset HEAD file.html
+4. check with git status
+
+get old version from repository
+--------------------------------
+1. change some file
+2. git commit -am "change message"
+3. git log
+check the message and decide from where to get the copy
+4. git checkout 01e7dba -- index.html
+5. git status 
+6. git commit -am "undoing changes"
+7. git staus
+
+git hub
+-------------
+1. goto github.com
+2. create an account
+3. create a new repository with your project name by giving public/private access
+4. create a project in your local, intialize git, add then commit 
+5. now connect remotely to your git hub repository
+6. git remote add defaultName https://github.com/bidesi/tutorial.git
+7. git remote (shows the default name)
+8. git push -u defaultName master
+9. provide username and password hoilla iit got checked in
+
+gitignore
+-----------------
+1. when project is getting opened with IDE there are several files comming with ide related when want to 
+ignore it 
+2. create a file called .gitignore 
+3. add the files want to ignore (.idea or file name )
+4. use git desktop version to controll everything which is easy for windows
+
+
+Tips
+-----
+1. Do branch in git hub and take that into ur account 
+2. change add and commit the changes
+3. then see those changes in git hub check all those and if no problems merge them back and delete the changes
+4. while working for other people projects fork them to your desktop and so the changes and make a pull request
+
+
+
+
+
+
+
+
+
+ 
